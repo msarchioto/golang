@@ -1,0 +1,11 @@
+FROM golang:1.11
+
+# Copy Go executable
+RUN mkdir -p /home/go
+COPY ./simpleRest /home/go/
+
+# Open Port for service
+EXPOSE 8000
+
+# Execute on start
+CMD ["/home/go/simpleRest"]

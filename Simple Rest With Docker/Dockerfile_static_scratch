@@ -1,0 +1,10 @@
+FROM scratch
+
+# Copy Go executable
+ADD ./simpleRest_static /
+
+# Open Port for service
+EXPOSE 8000
+
+# Execute on start
+CMD ["/simpleRest_static"]
