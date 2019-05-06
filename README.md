@@ -1,2 +1,2 @@
 # Golang
-Golang Tests and simple scripts
+Golang tests and simple scripts
